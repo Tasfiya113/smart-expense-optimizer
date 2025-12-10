@@ -1,11 +1,8 @@
 package service;
 
 import java.util.*;
-// import models.Expense;
 import models.*;
-// import models.FoodExpense;
-// import models.TravelExpense;
-// import models.ShoppingExpense;
+
 
 public class ExpenseManager {
 
@@ -50,13 +47,13 @@ public class ExpenseManager {
 
         System.out.println("\n--- Smart Suggestions ---");
         if (map.getOrDefault("Food", 0.0) > total * 0.4)
-            System.out.println("⚠ Try reducing Food expenses.");
+            System.out.println("Try reducing Food expenses.");
 
         if (map.getOrDefault("Travel", 0.0) > total * 0.3)
-            System.out.println("⚠ Travel expenses are on the higher side.");
+            System.out.println("Travel expenses are on the higher side.");
 
         if (map.getOrDefault("Shopping", 0.0) > total * 0.2)
-            System.out.println("⚠ Reduce unnecessary shopping to save more.");
+            System.out.println("Reduce unnecessary shopping to save more.");
     }
 }
 
